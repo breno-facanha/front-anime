@@ -41,14 +41,14 @@ export default function Animes() {
 
   return (
    <PageWrapper className="w-full h-full flex flex-col">
-    <div className="w-full flex justify-end">
+    <div className="w-full flex sm:justify-end justify-center items-center m-5 sm:m-0">
       {user?.role == 'admin' && (
       <button onClick={() => setOpenModal(true)} className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-all duration-300">
         Adicionar Anime
       </button>
       )}
     </div>
-    <div className="grid grid-cols-2 gap-6 mt-3">
+    <div className="flex flex-col sm:grid sm:grid-cols-3 gap-6 mt-3 justify-center items-center">
 
       {animes.map((anime) => {
         return ( 

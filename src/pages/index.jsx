@@ -85,10 +85,8 @@ export default function Login() {
             </p>
           </div>
 
-          {/* Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <form className="space-y-6" onSubmit={handleSubmit}>
-              {/* Email Field */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Email
@@ -117,7 +115,6 @@ export default function Login() {
                 )}
               </div>
 
-              {/* Password Field */}
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
                   Senha
@@ -146,7 +143,6 @@ export default function Login() {
                 )}
               </div>
 
-              {/* Forgot Password Link */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <input
@@ -164,7 +160,6 @@ export default function Login() {
                 </a>
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={isLoading}
@@ -188,7 +183,6 @@ export default function Login() {
               </button>
             </form>
 
-            {/* Sign Up Link */}
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Não tem uma conta?{' '}
@@ -199,7 +193,6 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Footer */}
           <div className="text-center">
             <p className="text-xs text-gray-500">
               © 2025 Animes v3. Todos os direitos reservados.
