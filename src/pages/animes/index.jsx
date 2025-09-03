@@ -3,7 +3,7 @@ import ModalCreateAnimes from "@/components/ModalCreateAnimes";
 import PageWrapper from "@/components/PageWrapper";
 import useUserData from "@/hooks/use-user-data";
 import instance from "@/instance/api";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 
@@ -11,6 +11,7 @@ export default function Animes() {
   const [animes, setAnimes] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const user = useUserData()
+  console.log(user);
 
   useEffect(() => {
 
