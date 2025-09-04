@@ -49,7 +49,7 @@ export default function Animes() {
       </button>
       )}
     </div>
-    <div className="flex flex-col sm:grid sm:grid-cols-3 gap-6 mt-3 justify-center items-center">
+    <div className="flex flex-col justify-center items-center sm:flex sm:justify-between sm:flex-wrap lg:flex-row gap-5 ">
 
       {animes.map((anime) => {
         return ( 

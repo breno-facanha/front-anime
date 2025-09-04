@@ -280,7 +280,7 @@ const CardAnime = ({ anime }) => {
           </h3>
           
           {/* Descrição */}
-          <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+          <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-1">
             {truncateDescription(description)}
           </p>
           
