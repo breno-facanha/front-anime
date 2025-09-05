@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import instance from '@/instance/api';
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 export default function Login() {
   const router = useRouter(); // para manipular rotas
@@ -52,9 +53,11 @@ export default function Login() {
     try {
       const response = await instance.post('/login', formData);
       localStorage.setItem('token', response.data.token); // armazenar token no localStorage chave e valor
+      toast.success('Login realizado com sucesso!');
       router.push('/animes'); // redirecionar para a página de animes
     } catch (error) {
-      alert('Login mal-sucedido!');
+      // alert('Login mal-sucedido!');
+      toast.error('Erro ao fazer login. Verifique suas credenciais.');
       
     }
   };
